@@ -5,7 +5,7 @@
 #define IN4  4
 const int trigPin = 5;
 const int echoPin = 6;
-// defines variables
+
 long duration;
 int distance = 0;
 #line 8 "C:\\Users\\DELL\\Documents\\Arduino\\Parking_Sensor\\newp\\newp.ino"
@@ -17,7 +17,7 @@ void setup() {
 pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
 pinMode(echoPin, INPUT); // Sets the echoPin as an Input
 pinMode(4, OUTPUT);
-Serial.begin(9600); // Starts the serial communication
+Serial.begin(9600); 
 }
 void loop() {
 if ((distance <7 )&&(distance > 0))
